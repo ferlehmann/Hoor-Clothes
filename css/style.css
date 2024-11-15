@@ -294,6 +294,10 @@ body{
     background-color: rgba(231, 231, 231, 0.411);
 }
 
+.footer-form ::placeholder{
+    color: white;
+}
+
 .footer-form button {
     padding: 10px;
     background-color: #555;
