@@ -20,19 +20,21 @@ body{
     width: 70px;
     height: 70px;
 }
+
 .nav-item a{
     color: white;
     font-size: 20px;
 }
+
 .dropdown-menu a{
     padding: 10px;
     margin-right: 30px;
-
 }
 
 .dropdown-menu a :hover{
     background-color: rgba(240, 128, 128, 0.336);
 }
+
 .dropdown-menu{
     background-color: lightcoral;
     margin-right: 40px;
@@ -166,6 +168,7 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .tarjetas-1{
     margin: 20px;
     background-image: url(../img/hombre.png);
@@ -176,6 +179,7 @@ body{
     border-radius: 5px;
     display: flex;
 }
+
 .tarjetas-2{
     margin: 20px;
     background-image: url(../img/mujer.png);
@@ -186,6 +190,7 @@ body{
     border-radius: 5px;
     display: flex;
 }
+
 .tarjetas-3{
     margin: 20px;
     background-image: url(../img/jeans.png);
@@ -196,6 +201,7 @@ body{
     border-radius: 5px;
     display: flex;
 }
+
 .tarjetas-4{
     margin: 20px;
     background-image: url(../img/accesorios.png);
@@ -242,15 +248,16 @@ body{
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.671);
 }
+
 .tarjetas-3:hover .contenido-tarjetas{
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.671);
 }
+
 .tarjetas-4:hover .contenido-tarjetas{
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.671);
 }
-/* HASTA ACA */
 
 /* FOOTER DE TODOS LOS HTML */
 
@@ -361,24 +368,18 @@ span a:hover{
     font-style: italic;
 }
 
-.main-compras-conteiner{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center ;
-    padding: 10px;
-    margin-top: 40px;
-    margin-bottom: 70px;
-}
-
 .main-compras-conteiner h2{
     font-size: 20px;
     color: lightslategray;
     padding: 10px 30px;
 }
+
 .main-compras-conteiner2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
 }
 
 .card {
@@ -452,7 +453,6 @@ span a:hover{
 .verano-tarjetas .card{
     background-color: rgba(226, 159, 13, 0.26);
 }
-
 
 .verano-tarjetas div{
     padding: 60px;
@@ -557,92 +557,102 @@ span a:hover{
     font-size: 18px;
 }
 
-/* MEDIA QUERIES DEL INDEX */
+/* MEDIA QUERIES */
 @media screen and (max-width:1500px){
 
-    .verano img{
+    .verano img{ /* PAGE INDEX */
         width: 1000px;
         height: 500px;
     }
-    .verano{
+    .verano{ /* PAGE INDEX */
         align-items: center;
         margin-top: 70px;
     }
 }
 
-@media screen and (max-width:1250px){
+@media screen and (max-width:1366px){
 
-    .verano{
+.main-compras-conteiner2{ /* PAGE COMPRAS */
+    grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (max-width:1250px){ /* INDEX */
+
+    .verano{ /* PAGE INDEX */
         flex-direction: column;
         justify-content: center;
         margin-bottom: 70px;
     }
-    .categorias{
+    .categorias{ /* PAGE INDEX */
         height:1300px;
     }
-    .categorias-conteiner div{
+    .categorias-conteiner div{ /* PAGE INDEX */
         padding: 20px;
     }
-    .categorias h2{
+    .categorias h2{ /* PAGE INDEX */
         font-size: 50px;
     }
 
-    .categorias p{
+    .categorias p{ /* PAGE INDEX */
         font-size: 30px;
         margin: 10px;
     }
-    .hero{ /* fondo moda */
+    .hero{ /* PAGE INDEX */
         height: 700px;
         margin-bottom: 70px;
     }
     
-    .hero a{
+    .hero a{ /* PAGE INDEX */
         margin-bottom: 100px;
     }
     
 }
 
+@media screen and (max-width:1100px){
+
+.main-compras-conteiner2{ /* PAGE COMPRAS */
+    grid-template-columns: repeat(2,1fr);
+    }
+}
+
 @media screen and (max-width:1027px){
 
-    .footer-conteiner{
+    .footer-conteiner{ /* FOOTER */
         flex-direction: column;
     }   
-    .conteiner-2{
-        align-items: center;
-        margin-top: 50px;
-    }
-    .conteiner-2 h2{
-        text-align: center;
-    }
-    .categorias h2{
+
+    .categorias h2{ /* PAGE INDEX */
         font-size: 40px;
     }
     
-    .categorias p{
+    .categorias p{ /* PAGE INDEX */
         font-size: 20px;
     }
 }   
         
 @media screen and (max-width:1000px){
-    .verano img{
+
+    .verano img{ /* PAGE INDEX */
         width: 800px;
         height: 500px;
     }   
-    .main-compras h1{ /*PAGE COMPRAS */
+    .main-compras h1{ /* PAGE INDEX */
         font-size: 70px;
 
     }
 }
 
 @media screen and (max-width:800px){
-    .verano img{
+
+    .verano img{ /* PAGE INDEX */
         width: 600px;
         height: 400px;
     }
-    .categorias h2{
+    .categorias h2{ /* PAGE INDEX */
         font-size: 40px;
-    }
-    .categorias p{
+    } 
+    .categorias p{ /* PAGE INDEX */
         font-size: 20px;
     }
 
@@ -650,138 +660,149 @@ span a:hover{
         text-align: center;
         padding: 40px;
         background-color: rgba(243, 250, 179, 0.384);
-}
+    }
 
     .main-compras h1{ /*PAGE COMPRAS */
         font-size: 40px;
-}
+    }
 
     .main-compras-conteiner h2{ /*PAGE COMPRAS */
         font-size: 20px;
-}
+    }
 
     .card { /*PAGE COMPRAS */
         width: 200px;
-}
+    }
 
     .card h3 { /*PAGE COMPRAS */
         font-size: 15px;
-}
+    }
 
     .card button { /*PAGE COMPRAS */
         font-size: 10px;
-}
+    }
 
     .main-compras h1{ /*PAGE COMPRAS */
         font-size: 60px;
-}
+    }
 
     .main-compras h2{ /*PAGE COMPRAS */
         font-size: 20px;
-}
-}
-    @media screen and (max-width:740px){
-    .main-compras-conteiner2{ /*PAGE COMPRAS */
-        display: flex;
-        justify-content: center;
-        align-items: center ;
     }
 }
+
     @media screen and (max-width:680px){
-    .categorias{
+    
+    .categorias{ /* PAGE INDEX */
         height: 2400px;
     }
-    .hero{ 
+    .hero{  /* PAGE INDEX */
         height: 500px;
         margin-bottom: 70px;
     }
     
-    .hero{
+    .hero{ /* PAGE INDEX */
         background-image: url(../img/main-banner-2.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
     
-    .hero a{
+    .hero a{ /* PAGE INDEX */
         margin-bottom: 100px;
     }
 }
 
     @media screen and (max-width:603px){
     
-    .verano{
+    .verano{ /* PAGE INDEX */
         height: 500px;
-    }    
-    .verano img{
+    } 
+    
+    .verano img{ /* PAGE INDEX */
         width: 520px;
         height: 370px;
     }
-    .verano h1{
+
+    .verano h1{ /* PAGE INDEX */
         font-size: 30px; 
     }
     
-    .verano h2{
+    .verano h2{ /* PAGE INDEX */
         font-size: 20px; 
     }
     
-    .verano a{
+    .verano a{ /* PAGE INDEX */
         font-size: 15px;
     }
 
-    .contenedor-tarjetas{
+    .contenedor-tarjetas{ /* PAGE INDEX */
         flex-direction: column;
     }
-    .tarjetas-2,.tarjetas-1,.tarjetas-3,.tarjetas-4{
+    .tarjetas-2,.tarjetas-1,.tarjetas-3,.tarjetas-4{ /* PAGE INDEX */
         width: 250px;
         height: 400px;
     }
     
-    .categorias{
+    .categorias{ /* PAGE INDEX */
         height: 2000px;
     }
 }
 
-    @media screen and (max-width:523px){
-    .categorias h2{
-        font-size: 30px;
+    @media screen and (max-width:523px){ 
+
+    .categorias h2{ /* PAGE INDEX */
+        font-size: 30px; 
     }
-    .categorias p{
+    .categorias p{ /* PAGE INDEX */
         font-size: 15px;
     }
     
-    .footer-form {
+    .footer-form { /* FOOTER */
         width: 400px;
     }
 
-    .registro{
+    .registro{ /* FOOTER */
         font-size: 15px;
     }
     
-    span a{
+    span a{ /* FOOTER */
         font-size: 15px;
     }
 
-    .verano img{
+    .verano img{ /* PAGE INDEX */
         width: 475px;
         height: 325px;
     }
+
+    .main-compras-conteiner2{ /* PAGE COMPRAS */
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
-@media screen and (max-width:477px){
-    .verano img{
+@media screen and (max-width:477px){ 
+
+    .verano img{ /* PAGE INDEX */
     width: 0px;
     height: 0px;
     }
-    .verano{
+
+    .verano{  /* PAGE INDEX */
     height: 250px;
     }
-    .footer-form {
+
+    .footer-form {  /* FOOTER */
         width: 300px;
+    }
+
+    .div-formulario{ /* PAGE SUSCRIBITE */
+        width: 300px;
+
     }
 }
 
-@media screen and (max-width:380px){
-    .categorias{
+@media screen and (max-width:380px){ 
+
+    .categorias{ /* PAGE INDEX */
         height: 2050px;
     }
 }
