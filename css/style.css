@@ -355,21 +355,26 @@ span a:hover{
 .main-compras{
     text-align: center;
     padding: 40px;
-    background-color: rgba(243, 250, 179, 0.384);
+    background: url(../img/pajaro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .main-compras h1{
-    font-size: 80px;
-    color: lightcoral;
+    font-size: 120px;
+    color: lightslategray;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .main-compras h2{
     font-size: 30px;
-    color: lightcoral;
+    color: lightslategray;
     margin-bottom: 50px;
     text-transform: uppercase;
     font-style: italic;
+    font-weight: bold;
 }
 
 .main-compras-conteiner h2{
@@ -482,6 +487,7 @@ span a:hover{
     color: lightcoral;
     font-style: bold;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .tienda h2{
@@ -491,19 +497,21 @@ span a:hover{
     text-transform: uppercase;
     padding-top: 20px;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 .tienda p{
     font-style: italic;
     padding-bottom: 5px;
     font-size: 25px;
+    text-align: center;
 }
 
 .tienda iframe{
-    padding: 50px;
+    padding: 20px;
     margin-top: 50px;
-    width: 900px;
-    height: 600px;
+    width: 75%;
+    height: 500px;
 }
 
 
@@ -562,6 +570,7 @@ span a:hover{
 }
 
 /* MEDIA QUERIES */
+
 @media screen and (max-width:1500px){
 
     .verano img{ /* PAGE INDEX */
@@ -643,7 +652,11 @@ span a:hover{
     }   
     .main-compras h1{ /* PAGE INDEX */
         font-size: 70px;
+    }
 
+    .tienda iframe{ /* TIENDA */
+        height: 250px;
+        width: 100%;
     }
 }
 
@@ -692,6 +705,11 @@ span a:hover{
 
     .main-compras h2{ /*PAGE COMPRAS */
         font-size: 20px;
+    }
+
+    .tienda iframe{ /* TIENDA */
+        height: 400px;
+        width: 100%;
     }
 }
 
@@ -752,7 +770,7 @@ span a:hover{
     }
 }
 
-    @media screen and (max-width:523px){ 
+    @media screen and (max-width:523px){
 
     .categorias h2{ /* PAGE INDEX */
         font-size: 30px; 
@@ -781,7 +799,16 @@ span a:hover{
     .main-compras-conteiner2{ /* PAGE COMPRAS */
         grid-template-columns: repeat(1,1fr);
     }
-}
+
+    .main-compras h2{ /* PAGE COMPRAS */
+        font-size: 20px;
+    }
+
+    .tienda iframe{ /* TIENDA */
+        height: 400px;
+        width: 150%;
+    }
+} 
 
 @media screen and (max-width:477px){ 
 
@@ -794,17 +821,21 @@ span a:hover{
     height: 250px;
     }
 
-    .footer-form {  /* FOOTER */
+    .footer-form{  /* FOOTER */
         width: 300px;
     }
 
     .div-formulario{ /* PAGE SUSCRIBITE */
         width: 300px;
+    }
 
+    .tienda iframe{ /* TIENDA */
+        height: 400px;
+        width: 165%;
     }
 }
 
-@media screen and (max-width:380px){ 
+@media screen and (max-width:380px){
 
     .categorias{ /* PAGE INDEX */
         height: 2050px;
