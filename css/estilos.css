@@ -265,7 +265,10 @@ body {
   gap: 5px;
   justify-items: center;
   align-items: center;
-  background-color: rgba(228, 215, 158, 0.863);
+  background-image: url(../img/oceano.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 40px;
   padding-bottom: 50px;
 }
@@ -481,33 +484,28 @@ body {
 
 /* MAIN PAGE VERANO */
 .page-verano .preparate {
+  display: block;
+  text-align: center;
+}
+.page-verano .preparate .preparate-text {
+  background-image: url(../img/costa.png);
   height: 600px;
 }
-.page-verano .preparate img {
-  width: 100%;
-  height: 100%;
+.page-verano .preparate .preparate-text h1 {
+  padding-top: 70px;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
-.page-verano .preparate h1 {
-  position: absolute;
-  top: 20%; /* Centrado vertical */
-  left: 40%; /* Centrado horizontal */
-  transform: translate(-30%, -50%);
-  color: lightcoral;
-  font-size: 70px;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
-  text-align: center;
-}
-.page-verano .preparate h2 {
-  position: absolute;
-  top: 50%; /* Centrado vertical */
-  left: 50%; /* Centrado horizontal */
-  transform: translate(-10%, -50%);
-  color: rgba(85, 187, 107, 0.897);
-  font-size: 50px;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
-  text-align: center;
+.page-verano .preparate .preparate-text h2 {
+  padding-top: 70px;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 
 /* MAIN PAGE TIENDAS */
@@ -818,6 +816,14 @@ body {
   #footer .footer-content .footer-form {
     width: 300px;
   }
+  .page-verano .preparate .preparate-text h1 {
+    padding-top: 70px;
+    font-size: 60px;
+  }
+  .page-verano .preparate .preparate-text h2 {
+    padding-top: 70px;
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 720px) {
   .categorias { /* PAGE INDEX */
@@ -923,11 +929,28 @@ body {
     width: 0px;
     height: 0px;
   }
+  .tienda iframe {
+    width: 100%;
+  }
+  .page-verano .preparate .preparate-text h1 {
+    padding-top: 50px;
+    font-size: 60px;
+  }
+  .page-verano .preparate .preparate-text h2 {
+    padding-top: 70px;
+    font-size: 20px;
+  }
 }
-.tienda iframe {
-  width: 100%;
+@media screen and (max-width: 399px) {
+  .page-verano .preparate .preparate-text h1 {
+    padding-top: 40px;
+    font-size: 50px;
+  }
+  .page-verano .preparate .preparate-text h2 {
+    padding-top: 60px;
+    font-size: 20px;
+  }
 }
-
 @media screen and (max-width: 380px) {
   .categorias { /* PAGE INDEX */
     height: 2050px;

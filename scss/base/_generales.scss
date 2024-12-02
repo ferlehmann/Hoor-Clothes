@@ -217,14 +217,16 @@ body{
 }
 
 /* TARJETAS PAGE VERANO */
-
 .verano-tarjetas{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap: 5px;
     justify-items: center;
     align-items: center;
-    background-color: rgba(228, 215, 158, 0.863);
+    background-image: url(../img/oceano.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 40px;
     padding-bottom: 50px;
     
