@@ -1,0 +1,241 @@
+/* MAIN INDEX */
+
+    .hero{
+    background-image: url(../img/main-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+        a{
+            bottom: 150px;
+            font-size: 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: rgba(240, 128, 128, 0.466);
+            color: white;
+            border-radius: 20px;
+            margin-bottom: 100px;
+            padding: 20px;
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.603);
+                color: lightcoral;
+            }
+        }
+    }
+    .verano{
+        width: auto;
+        height: 700px;
+        display: flex;
+        justify-content: space-around;
+        padding: 30px;
+        margin-bottom: 70px;    
+        img{
+            padding: 30px;
+            width: 1500px;
+            height: 700px;
+        }
+        .verano-conteiner{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1{
+                color: lightslategray;
+                font-weight: 500;  
+                font-size: 45px; 
+                margin-bottom: 10px;
+            }
+            h2{
+                font-size: 30px; 
+                color: lightslategray;
+                font-weight:lighter;
+                font-style: italic;
+                margin-bottom: 50px;
+            }
+            a{
+                font-size: 20px;
+                text-decoration: none;
+                text-transform: uppercase;
+                background-color: rgba(240, 128, 128, 0.788);
+                color: white;
+                padding: 10px 20px;
+                border-radius: 20px;
+                &:hover{
+                    background-color: lightslategray;
+                    color: lightcoral;
+                }
+            }
+        }
+    }
+        .categorias{
+            background-color: rgba(240, 128, 128, 0.199);
+            height: 900px;
+            h2{
+                text-transform: uppercase;
+                font-size: 80px;
+                font-style: bold;
+                color: lightcoral;
+                padding-top: 50px;
+                text-align: center;
+            }
+            p{
+                font-size: 30px;
+                font-style: italic;
+                margin: 20px;
+                color: lightslategray;
+                text-align: center;
+            }    
+        }
+
+/* MAIN PAGE COMPRAS */
+
+.main-compras{
+    text-align: center;
+    padding: 40px;
+    background: url(../img/pajaro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    h1{
+        font-size: 120px;
+        color: lightslategray;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    h2{
+        font-size: 30px;
+        color: lightslategray;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: bold;
+    }
+}
+
+/* MAIN PAGE VERANO */
+.page-verano{
+    
+    .preparate{
+        height: 600px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        h1{
+            position: absolute;
+            top: 20%; /* Centrado vertical */
+            left: 40%; /* Centrado horizontal */
+            transform: translate(-30%, -50%);
+            color: lightcoral;
+            font-size: 70px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+            text-align: center;
+        }
+        h2{
+            position: absolute;
+            top: 50%; /* Centrado vertical */
+            left: 50%; /* Centrado horizontal */
+            transform: translate(-10%, -50%);
+            color: rgba(85, 187, 107, 0.897);
+            font-size: 50px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+            text-align: center;
+
+        }
+    }
+}
+
+/* MAIN PAGE TIENDAS */
+.tienda{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(240, 128, 128, 0.062);
+    h1{
+        font-size: 50px;
+        color: lightcoral;
+        font-style: bold;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h2{
+        font-size: 30px;
+        color: rgb(82, 56, 56);
+        font-style: bold;
+        text-transform: uppercase;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    p{
+        font-style: italic;
+        padding-bottom: 5px;
+        font-size: 25px;
+        text-align: center;
+    }
+    iframe{
+        padding: 20px;
+        margin-top: 50px;
+        width: 75%;
+        height: 500px;
+    }
+}
+
+/* MAIN PAGE SUSCRIBITE */
+
+.formulario{
+    background-image: url(../img/ubicacion.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: 1900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    .div-formulario{
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        h1{
+            margin-bottom: 20px;
+            color: lightcoral;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            label{
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: lightslategray;
+            }
+            input,select{
+                margin-bottom: 15px;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                color: lightslategray;
+            }
+            
+            }
+        }
+    .div-formulario input[type="submit"] {
+        background-color: lightcoral;
+        color: white;
+        border: none;
+        font-size: 18px;
+    }
+}

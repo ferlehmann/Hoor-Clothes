@@ -1,0 +1,339 @@
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1500px){
+    .verano{ /* PAGE INDEX */
+        align-items: center;
+        margin-top: 70px;
+        img{ /* PAGE INDEX */
+            width: 1000px;
+            height: 600px;
+            }
+        }
+        #footer{
+            .footer-content{
+                .footer-form{
+                    width: 400px;
+                }
+            }
+        }
+        .tienda iframe{
+        width: 100%;
+        }
+        .formulario{
+            .div-formulario{ /* PAGE SUSCRIBITE */
+                width: 600px;
+            }
+        }
+        .verano-tarjetas{
+            grid-template-columns: repeat(4,1fr);
+        }
+    }    
+@media screen and (max-width:1366px){
+
+.main-compras{
+    .main-compras-conteiner2{ /* PAGE COMPRAS */
+        grid-template-columns: repeat(3,1fr);
+        }
+    }
+    .verano{ /* PAGE INDEX */
+        img{ /* PAGE INDEX */
+            width: 900px;
+            height: 500px;
+            }
+        }
+    .categorias{ /* PAGE INDEX */
+        height:1500px;
+    }
+}
+@media screen and (max-width:1250px){ /* INDEX */
+    .verano{ /* PAGE INDEX */
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    .categorias{ /* PAGE INDEX */
+        .contenedor-tarjetas{ /* PAGE INDEX */
+            padding: 20px;
+            }
+
+        h2{ /* PAGE INDEX */
+            font-size: 50px;
+        }
+
+        p{ /* PAGE INDEX */
+            font-size: 30px;
+            margin: 10px;
+        }
+    } 
+    }
+
+    .hero{ /* PAGE INDEX */
+        height: 700px;
+        margin-bottom: 70px;
+    
+        a{ /* PAGE INDEX */
+            margin-bottom: 100px;
+        }
+    }
+
+@media screen and (max-width:1175px){
+    
+    .verano-tarjetas{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+
+@media screen and (max-width:1100px){
+    .main-compras{
+        .main-compras-conteiner2{ /* PAGE COMPRAS */
+            grid-template-columns: repeat(2,1fr);
+            }
+        }   
+        .categorias{ /* PAGE INDEX */
+            height:1500px;
+        }
+}
+
+
+@media screen and (max-width:1027px){
+
+#footer{
+    .footer-content{ /* FOOTER */
+        flex-direction: column;
+        }  
+    }
+    .categorias{
+        h2{ /* PAGE INDEX */
+            font-size: 40px;
+        }
+    }
+    }   
+@media screen and (max-width:1000px){
+
+    .verano{
+        img{ /* PAGE INDEX */
+            width: 800px;
+            height: 500px;
+        } 
+    }   
+    .main-compras{ 
+        h1{ /* PAGE COMPRAS */
+        font-size: 70px;
+        }
+    }
+    .tienda{
+        .iframe{ /* TIENDA */
+            height: 75%;
+            width: 75%;
+        }
+    }
+}
+
+@media screen and (max-width:870px){
+    .verano-tarjetas{
+        grid-template-columns: repeat(2,1fr);
+        .card{
+            width: 220px;
+                h3{
+                    font-size: 20px;
+                }
+                .precio{
+                    font-size: 15px;
+                }     
+                button{
+                    font-size: 15px;
+                }
+            } 
+        }
+    }
+
+@media screen and (max-width:800px){
+
+    .verano{
+        img{ /* PAGE INDEX */
+            width: 600px;
+            height: 400px;
+        } 
+    }
+    .categorias{
+        h2{ /* PAGE INDEX */
+            font-size: 40px;
+        } 
+        p{ /* PAGE INDEX */
+            font-size: 20px;
+    }
+}
+
+    .main-compras{ /*PAGE COMPRAS */
+        text-align: center;
+        padding: 40px;
+        background-color: rgba(243, 250, 179, 0.384);
+            h1{ /*PAGE COMPRAS */
+                font-size: 40px;
+                }
+            h2{ /*PAGE COMPRAS */
+                font-size: 20px;
+            }
+            .main-compras-conteiner2{
+                .card { /*PAGE COMPRAS */
+                width: 200px;
+                    h3{
+                        font-size: 15px;
+                    }
+                    button { /*PAGE COMPRAS */
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    .tienda{
+        .iframe{ /* TIENDA */
+            height: 400px;
+            width: 100%;
+        }
+    }
+
+    #footer{
+        .footer-content{
+            .footer-form{
+                width: 300px;
+            }
+        }
+    }
+}
+    @media screen and (max-width:720px){
+        .categorias{ /* PAGE INDEX */
+            height:2500px;
+    }
+}
+    @media screen and (max-width:680px){
+    
+    .hero{  /* PAGE INDEX */
+        height: 500px;
+        margin-bottom: 70px;
+    }
+    
+    .hero{ /* PAGE INDEX */
+        background-image: url(../img/main-banner-2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        a{ /* PAGE INDEX */
+            margin-bottom: 100px;
+        }
+    }
+    
+}
+
+    @media screen and (max-width:603px){
+    .categorias{ /* PAGE INDEX */
+            height:2900px;
+        }
+    .verano{ /* PAGE INDEX */
+        height: 600px;
+        img{ /* PAGE INDEX */
+            width: 520px;
+            height: 370px;
+        }
+        h1{ /* PAGE INDEX */
+            font-size: 30px; 
+        }     
+        h2{ /* PAGE INDEX */
+            font-size: 20px; 
+        }
+        a{ /* PAGE INDEX */
+            font-size: 15px;
+        }
+    } 
+    .contenedor-tarjetas{ /* PAGE INDEX */
+        flex-direction: column;
+        .tarjetas-2,.tarjetas-1,.tarjetas-3,.tarjetas-4{ /* PAGE INDEX */
+            width: 250px;
+            height: 400px;
+        }
+    }
+    .categorias{ /* PAGE INDEX */
+        height: 2200px;
+    }
+}
+
+    @media screen and (max-width:523px){
+
+    .categorias{
+        h2{ /* PAGE INDEX */
+            font-size: 30px; 
+        }
+        p{ /* PAGE INDEX */
+            font-size: 15px;
+        }
+    }
+            .registro{ /* FOOTER */
+                font-size: 15px;
+            }
+            h3{
+                span a{ /* FOOTER */
+                    font-size: 15px;
+                }
+            }
+    .verano{
+        img{ /* PAGE INDEX */
+            width: 475px;
+            height: 325px;
+        }
+    }
+    .main-compras{
+        h2{ /* PAGE COMPRAS */
+            font-size: 20px;
+        }
+        .main-compras-conteiner2{ /* PAGE COMPRAS */
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+    .tienda{
+        .iframe{ /* TIENDA */
+            height: 400px;
+            width: 150%;
+        }
+    }
+    .verano-tarjetas{
+        grid-template-columns: repeat(1,1fr);
+        .card{
+            width: 220px;
+                h3{
+                    font-size: 20px;
+                }
+                .precio{
+                    font-size: 15px;
+                }     
+                button{
+                    font-size: 15px;
+                }
+            } 
+        }
+    
+}
+
+@media screen and (max-width:477px){ 
+    .formulario{
+        .div-formulario{ /* PAGE SUSCRIBITE */
+            width: 300px;
+        }
+    }
+
+    .verano{  /* PAGE INDEX */
+    height: 400px;
+        img{ /* PAGE INDEX */
+            width: 0px;
+            height: 0px;
+        }
+    }
+    }
+    .tienda iframe{
+        width: 100%;
+    }
+
+@media screen and (max-width:380px){
+    .categorias{ /* PAGE INDEX */
+        height: 2050px;
+    }
+}

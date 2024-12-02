@@ -377,11 +377,6 @@ span a:hover{
     font-weight: bold;
 }
 
-.main-compras-conteiner h2{
-    font-size: 20px;
-    color: lightslategray;
-    padding: 10px 30px;
-}
 
 .main-compras-conteiner2{
     display: grid;

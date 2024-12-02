@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFFFF;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+/* BOTON BUSCAR BOOTSTRAP*/
+.btn{
+    background-color: rgba(255, 255, 255, 0.281);
+    color: rgb(0, 0, 0);
+}
+
+/* TARJETAS INDEX */
+.contenedor-tarjetas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .tarjetas-1{
+        margin: 20px;
+        background-image: url(../img/hombre.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 300px;
+        height: 500px;
+        border-radius: 5px;
+        display: flex;
+        .contenido-tarjetas{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: .5s;
+            h3{
+                color: lightcoral;
+                font-size: 40px;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-style: italic;    
+            }
+            a{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+
+    .tarjetas-2{
+        margin: 20px;
+        background-image: url(../img/mujer.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 300px;
+        height: 500px;
+        border-radius: 5px;
+        display: flex;
+        .contenido-tarjetas{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: .5s;
+            h3{
+                color: lightcoral;
+                font-size: 40px;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-style: italic;
+            }
+            a{
+                width: 100px;
+                height: 100px; 
+            }
+        }
+    }
+    .tarjetas-3{
+        margin: 20px;
+        background-image: url(../img/jeans.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 300px;
+        height: 500px;
+        border-radius: 5px;
+        display: flex;
+        .contenido-tarjetas{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: .5s;
+            h3{
+                color: lightcoral;
+                font-size: 40px;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-style: italic;
+            }
+            a{
+                width: 100px;
+                height: 100px; 
+            }
+        }
+    }
+    .tarjetas-4{
+        margin: 20px;
+        background-image: url(../img/accesorios.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 300px;
+        height: 500px;
+        border-radius: 10px;
+        display: flex;
+
+        .contenido-tarjetas{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: .5s;
+
+            h3{
+                color: lightcoral;
+                font-size: 40px;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-style: italic;
+            }
+            a{
+                width: 100px;
+                height: 100px; 
+            }
+        }
+    }
+}
+
+.tarjetas-1:hover .contenido-tarjetas{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+.tarjetas-2:hover .contenido-tarjetas{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+.tarjetas-3:hover .contenido-tarjetas{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+.tarjetas-4:hover .contenido-tarjetas{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+/* TARJETAS PAGE COMPRAS */
+
+.main-compras-conteiner2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    .card{
+        width: 300px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 10px;
+        text-align: center;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        img{
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        h3{
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        button{
+            background-color: lightcoral;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            &:hover{
+                background-color: lightslategray;
+            }
+        }
+    }
+}
+
+/* TARJETAS PAGE VERANO */
+
+.verano-tarjetas{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(228, 215, 158, 0.863);
+    padding-top: 40px;
+    padding-bottom: 50px;
+    
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 260px;
+        padding: 20px 1px;
+        margin: 10px 0;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        border-radius: 10px;
+        border-color: rgba(119, 136, 153, 0.075);
+        background: linear-gradient(45deg, #ffffff59 0%, #f1eabdd3 100%);
+        overflow: hidden;
+        
+        img{
+            max-width: 75%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            &:hover{
+                transform: scale(1.05);
+            }
+
+        }
+        h3{
+            font-weight: 800;
+            font-size: 30px;
+            margin: 10px 0;
+            color: light;
+        }
+        
+        .precio{
+            color: rgb(156, 154, 154);
+            font-weight: 800;
+            font-size: 20px;
+            text-shadow: 0px 0px 10px rgba(255, 247, 247, 0.637);
+            }
+            
+        button{
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            border: none;
+            outline: none;
+            color: rgb(255 255 255);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 20px;
+            padding: 6px;
+            background-color: rgba(240, 128, 128, 0.658);
+            border-radius: 10px;
+            width: 90%;
+            &:hover{
+                background-color: rgba(240, 128, 128, 0.445);
+            }
+            }
+        }
+    }
