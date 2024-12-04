@@ -17,165 +17,29 @@ body{
     color: rgb(0, 0, 0);
 }
 
-/* TARJETAS INDEX */
-.contenedor-tarjetas{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-    .tarjetas-1{
-        margin: 20px;
-        background-image: url(../img/hombre.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 300px;
-        height: 500px;
-        border-radius: 5px;
-        display: flex;
-        .contenido-tarjetas{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            opacity: 0;
-            transition: .5s;
-            h3{
-                color: lightcoral;
-                font-size: 40px;
-                font-weight: 500;
-                text-transform: uppercase;
-                font-weight: bold;
-                font-style: italic;    
-            }
-            a{
-                width: 100px;
-                height: 100px;
-            }
-        }
+/* HOVER DE LAS TARJETAS DEL INDEX */
+    
+    .tarjetas-1:hover .contenido-tarjetas{
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.671);
+    }
+    
+    .tarjetas-2:hover .contenido-tarjetas{
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.671);
+    }
+    
+    .tarjetas-3:hover .contenido-tarjetas{
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.671);
+    }
+    
+    .tarjetas-4:hover .contenido-tarjetas{
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.671);
     }
 
-    .tarjetas-2{
-        margin: 20px;
-        background-image: url(../img/mujer.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 300px;
-        height: 500px;
-        border-radius: 5px;
-        display: flex;
-        .contenido-tarjetas{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            opacity: 0;
-            transition: .5s;
-            h3{
-                color: lightcoral;
-                font-size: 40px;
-                font-weight: 500;
-                text-transform: uppercase;
-                font-weight: bold;
-                font-style: italic;
-            }
-            a{
-                width: 100px;
-                height: 100px; 
-            }
-        }
-    }
-    .tarjetas-3{
-        margin: 20px;
-        background-image: url(../img/jeans.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 300px;
-        height: 500px;
-        border-radius: 5px;
-        display: flex;
-        .contenido-tarjetas{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            opacity: 0;
-            transition: .5s;
-            h3{
-                color: lightcoral;
-                font-size: 40px;
-                font-weight: 500;
-                text-transform: uppercase;
-                font-weight: bold;
-                font-style: italic;
-            }
-            a{
-                width: 100px;
-                height: 100px; 
-            }
-        }
-    }
-    .tarjetas-4{
-        margin: 20px;
-        background-image: url(../img/accesorios.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 300px;
-        height: 500px;
-        border-radius: 10px;
-        display: flex;
 
-        .contenido-tarjetas{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            opacity: 0;
-            transition: .5s;
-
-            h3{
-                color: lightcoral;
-                font-size: 40px;
-                font-weight: 500;
-                text-transform: uppercase;
-                font-weight: bold;
-                font-style: italic;
-            }
-            a{
-                width: 100px;
-                height: 100px; 
-            }
-        }
-    }
-}
-
-.tarjetas-1:hover .contenido-tarjetas{
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 0.671);
-}
-
-.tarjetas-2:hover .contenido-tarjetas{
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 0.671);
-}
-
-.tarjetas-3:hover .contenido-tarjetas{
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 0.671);
-}
-
-.tarjetas-4:hover .contenido-tarjetas{
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 0.671);
-}
 
 /* TARJETAS PAGE COMPRAS */
 

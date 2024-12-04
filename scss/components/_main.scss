@@ -9,21 +9,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-        a{
-            bottom: 150px;
-            font-size: 30px;
-            text-decoration: none;
-            text-transform: uppercase;
-            background-color: rgba(240, 128, 128, 0.466);
-            color: white;
-            border-radius: 20px;
-            margin-bottom: 100px;
-            padding: 20px;
-            &:hover{
-                background-color: rgba(255, 255, 255, 0.603);
-                color: lightcoral;
-            }
-        }
     }
     .verano{
         width: auto;
@@ -55,19 +40,6 @@
                 font-weight:lighter;
                 font-style: italic;
                 margin-bottom: 50px;
-            }
-            a{
-                font-size: 20px;
-                text-decoration: none;
-                text-transform: uppercase;
-                background-color: rgba(240, 128, 128, 0.788);
-                color: white;
-                padding: 10px 20px;
-                border-radius: 20px;
-                &:hover{
-                    background-color: lightslategray;
-                    color: lightcoral;
-                }
             }
         }
     }

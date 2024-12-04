@@ -1,48 +1,97 @@
-/* %contenido-tarjetas-index{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    opacity: 0;
-    transition: 0.5s;
-}
-%tarjetas-index{
-    margin: 20px;
+/* TARJETAS DEL INDEX */
+$tarjeta-width: 300px;
+$tarjeta-height: 500px;
+$tarjeta-border-radius: 5px;
+$tarjeta-margin: 20px;
+$h3-color: lightcoral;
+$h3-font-size: 40px;
+$h3-font-weight: 500;
+$h3-text-transform: uppercase;
+$h3-font-style: italic;
+$contenido-tarjetas-width: 100px;
+$contenido-tarjetas-height: 100px;
+
+// Estilo base para las tarjetas
+%tarjeta-base {
     background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
-    height: 500px;
-    border-radius: 5px;
+    margin: $tarjeta-margin;
+    width: $tarjeta-width;
+    height: $tarjeta-height;
     display: flex;
+    
+    .contenido-tarjetas {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.5s;
+
+        h3 {
+            color: $h3-color;
+            font-size: $h3-font-size;
+            font-weight: $h3-font-weight;
+            text-transform: $h3-text-transform;
+            font-style: $h3-font-style;
+        }
+
+        a {
+            width: $contenido-tarjetas-width;
+            height: $contenido-tarjetas-height;
+        }
+    }
 }
 
-%tarjetas-h3{
-    color: lightcoral;
-    font-size: 40px;
-    font-weight: 500;
+// Contenedor principal
+.categorias {
+    .contenedor-tarjetas {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .tarjetas-1 {
+        @extend %tarjeta-base;
+        background-image: url(../img/hombre.png);
+    }
+
+    .tarjetas-2 {
+        @extend %tarjeta-base;
+        background-image: url(../img/mujer.png);
+    }
+
+    .tarjetas-3 {
+        @extend %tarjeta-base;
+        background-image: url(../img/jeans.png);
+    }
+
+    .tarjetas-4 {
+        @extend %tarjeta-base;
+        background-image: url(../img/accesorios.png);
+    }
+}
+
+/* BOTONES COMPRA AHORA Y VER TODA LA TEMPORADA DEL INDEX*/
+
+%button-style {
     text-transform: uppercase;
-    font-weight: bold;
-    font-style: italic;  
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: rgba(240, 128, 128, 0.788);
+    color: white;
+    text-decoration: none;
+    &:hover {
+        background-color: rgba(240, 128, 128, 0.425);
+        color: lightcoral;
+    }
 }
 
-%tarjetas-a{
-    width: 100px;
-    height: 100px;
+.hero a, 
+.verano .verano-conteiner a {
+    @extend %button-style;
+    font-size: 20px; // Puedes ajustar estilos específicos aquí
 }
-
-%hover-tarjetas{
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 0.671);
-}
-
-.contenedor-tarjetas .tarjetas-1 .tarjetas-2 .tarjetas-3 .tarjetas-4{
-@extend %tarjetas-index;
-}
-
-.tarjetas-1:hover .tarjetas-2:hover .tarjetas-3:hover .tarjetas-4:hover .contenido-tarjetas{
-    @extend %hover-tarjetas;
-}
-
- */

@@ -1,52 +1,75 @@
-/* %contenido-tarjetas-index{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    opacity: 0;
-    transition: 0.5s;
-}
-%tarjetas-index{
-    margin: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 300px;
-    height: 500px;
-    border-radius: 5px;
-    display: flex;
-}
-
-%tarjetas-h3{
-    color: lightcoral;
-    font-size: 40px;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-style: italic;  
-}
-
-%tarjetas-a{
-    width: 100px;
-    height: 100px;
-}
-
-%hover-tarjetas{
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 0.671);
-}
-
-.contenedor-tarjetas .tarjetas-1 .tarjetas-2 .tarjetas-3 .tarjetas-4{
-@extend %tarjetas-index;
-}
-
-.tarjetas-1:hover .tarjetas-2:hover .tarjetas-3:hover .tarjetas-4:hover .contenido-tarjetas{
-    @extend %hover-tarjetas;
-}
-
- */
+/* TARJETAS DEL INDEX */
 @import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+.categorias .tarjetas-4, .categorias .tarjetas-3, .categorias .tarjetas-2, .categorias .tarjetas-1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+  width: 300px;
+  height: 500px;
+  display: flex;
+}
+.categorias .tarjetas-4 .contenido-tarjetas, .categorias .tarjetas-3 .contenido-tarjetas, .categorias .tarjetas-2 .contenido-tarjetas, .categorias .tarjetas-1 .contenido-tarjetas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.5s;
+}
+.categorias .tarjetas-4 .contenido-tarjetas h3, .categorias .tarjetas-3 .contenido-tarjetas h3, .categorias .tarjetas-2 .contenido-tarjetas h3, .categorias .tarjetas-1 .contenido-tarjetas h3 {
+  color: lightcoral;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.categorias .tarjetas-4 .contenido-tarjetas a, .categorias .tarjetas-3 .contenido-tarjetas a, .categorias .tarjetas-2 .contenido-tarjetas a, .categorias .tarjetas-1 .contenido-tarjetas a {
+  width: 100px;
+  height: 100px;
+}
+
+.categorias .contenedor-tarjetas {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.categorias .tarjetas-1 {
+  background-image: url(../img/hombre.png);
+}
+.categorias .tarjetas-2 {
+  background-image: url(../img/mujer.png);
+}
+.categorias .tarjetas-3 {
+  background-image: url(../img/jeans.png);
+}
+.categorias .tarjetas-4 {
+  background-image: url(../img/accesorios.png);
+}
+
+/* BOTONES COMPRA AHORA Y VER TODA LA TEMPORADA DEL INDEX*/
+.hero a,
+.verano .verano-conteiner a {
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: rgba(240, 128, 128, 0.788);
+  color: white;
+  text-decoration: none;
+}
+.hero a:hover,
+.verano .verano-conteiner a:hover {
+  background-color: rgba(240, 128, 128, 0.425);
+  color: lightcoral;
+}
+
+.hero a,
+.verano .verano-conteiner a {
+  font-size: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -64,142 +87,7 @@ body {
   color: rgb(0, 0, 0);
 }
 
-/* TARJETAS INDEX */
-.contenedor-tarjetas {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.contenedor-tarjetas .tarjetas-1 {
-  margin: 20px;
-  background-image: url(../img/hombre.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 300px;
-  height: 500px;
-  border-radius: 5px;
-  display: flex;
-}
-.contenedor-tarjetas .tarjetas-1 .contenido-tarjetas {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  opacity: 0;
-  transition: 0.5s;
-}
-.contenedor-tarjetas .tarjetas-1 .contenido-tarjetas h3 {
-  color: lightcoral;
-  font-size: 40px;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-style: italic;
-}
-.contenedor-tarjetas .tarjetas-1 .contenido-tarjetas a {
-  width: 100px;
-  height: 100px;
-}
-.contenedor-tarjetas .tarjetas-2 {
-  margin: 20px;
-  background-image: url(../img/mujer.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 300px;
-  height: 500px;
-  border-radius: 5px;
-  display: flex;
-}
-.contenedor-tarjetas .tarjetas-2 .contenido-tarjetas {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  opacity: 0;
-  transition: 0.5s;
-}
-.contenedor-tarjetas .tarjetas-2 .contenido-tarjetas h3 {
-  color: lightcoral;
-  font-size: 40px;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-style: italic;
-}
-.contenedor-tarjetas .tarjetas-2 .contenido-tarjetas a {
-  width: 100px;
-  height: 100px;
-}
-.contenedor-tarjetas .tarjetas-3 {
-  margin: 20px;
-  background-image: url(../img/jeans.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 300px;
-  height: 500px;
-  border-radius: 5px;
-  display: flex;
-}
-.contenedor-tarjetas .tarjetas-3 .contenido-tarjetas {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  opacity: 0;
-  transition: 0.5s;
-}
-.contenedor-tarjetas .tarjetas-3 .contenido-tarjetas h3 {
-  color: lightcoral;
-  font-size: 40px;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-style: italic;
-}
-.contenedor-tarjetas .tarjetas-3 .contenido-tarjetas a {
-  width: 100px;
-  height: 100px;
-}
-.contenedor-tarjetas .tarjetas-4 {
-  margin: 20px;
-  background-image: url(../img/accesorios.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 300px;
-  height: 500px;
-  border-radius: 10px;
-  display: flex;
-}
-.contenedor-tarjetas .tarjetas-4 .contenido-tarjetas {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  opacity: 0;
-  transition: 0.5s;
-}
-.contenedor-tarjetas .tarjetas-4 .contenido-tarjetas h3 {
-  color: lightcoral;
-  font-size: 40px;
-  font-weight: 500;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-style: italic;
-}
-.contenedor-tarjetas .tarjetas-4 .contenido-tarjetas a {
-  width: 100px;
-  height: 100px;
-}
-
+/* HOVER DE LAS TARJETAS DEL INDEX */
 .tarjetas-1:hover .contenido-tarjetas {
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.671);
@@ -375,21 +263,6 @@ body {
   justify-content: center;
   align-items: flex-end;
 }
-.hero a {
-  bottom: 150px;
-  font-size: 30px;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: rgba(240, 128, 128, 0.466);
-  color: white;
-  border-radius: 20px;
-  margin-bottom: 100px;
-  padding: 20px;
-}
-.hero a:hover {
-  background-color: rgba(255, 255, 255, 0.603);
-  color: lightcoral;
-}
 
 .verano {
   width: auto;
@@ -423,19 +296,6 @@ body {
   font-weight: lighter;
   font-style: italic;
   margin-bottom: 50px;
-}
-.verano .verano-conteiner a {
-  font-size: 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: rgba(240, 128, 128, 0.788);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
-}
-.verano .verano-conteiner a:hover {
-  background-color: lightslategray;
-  color: lightcoral;
 }
 
 .categorias {
