@@ -374,10 +374,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(240, 128, 128, 0.062);
+  background-image: url(../img/city.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .tienda h1 {
-  font-size: 50px;
+  font-size: 70px;
   color: lightcoral;
   font-style: bold;
   text-transform: uppercase;
@@ -398,11 +401,48 @@ body {
   font-size: 25px;
   text-align: center;
 }
-.tienda iframe {
-  padding: 20px;
-  margin-top: 50px;
-  width: 75%;
-  height: 500px;
+.tienda .tiendas-fisicas {
+  width: 100%;
+  padding: 40px;
+}
+.tienda .tiendas-fisicas .map-content {
+  display: flex;
+  text-align: left;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+}
+.tienda .tiendas-fisicas .map-content .map-text {
+  background-color: rgba(255, 255, 255, 0.199);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+.tienda .tiendas-fisicas .map-content .map-text h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 40px;
+  color: lightcoral;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.801);
+}
+.tienda .tiendas-fisicas .map-content .map-text h4 {
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+.tienda .tiendas-fisicas .map-content .iframe {
+  width: 40%;
+  height: 300px;
+  border: 5px solid lightslategrey;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+.tienda .tiendas-fisicas .map-content .iframe:hover {
+  border-color: lightcoral;
+  transform: scale(1.02);
+  transition: transform 0.3s, border-color 0.3s;
 }
 
 /* MAIN PAGE SUSCRIBITE */
@@ -513,6 +553,7 @@ body {
 }
 #footer .redes ul {
   list-style-type: none;
+  padding-left: 0px;
 }
 #footer .redes ul li {
   text-align: center;
@@ -538,14 +579,17 @@ body {
   #footer .footer-content .footer-form {
     width: 400px;
   }
-  .tienda iframe {
-    width: 100%;
-  }
   .formulario .div-formulario { /* PAGE SUSCRIBITE */
     width: 600px;
   }
   .verano-tarjetas {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .tienda .tiendas-fisicas .map-content {
+    display: block;
+  }
+  .tienda .tiendas-fisicas .map-content .iframe {
+    width: 100%;
   }
 }
 @media screen and (max-width: 1366px) {
@@ -616,10 +660,6 @@ body {
   .main-compras h1 { /* PAGE COMPRAS */
     font-size: 70px;
   }
-  .tienda .iframe { /* TIENDA */
-    height: 75%;
-    width: 75%;
-  }
 }
 @media screen and (max-width: 870px) {
   .verano-tarjetas {
@@ -669,10 +709,6 @@ body {
   .main-compras .main-compras-conteiner2 .card button { /*PAGE COMPRAS */
     font-size: 10px;
   }
-  .tienda .iframe { /* TIENDA */
-    height: 400px;
-    width: 100%;
-  }
   #footer .footer-content .footer-form {
     width: 300px;
   }
@@ -702,6 +738,9 @@ body {
   }
   .hero a { /* PAGE INDEX */
     margin-bottom: 100px;
+  }
+  .tienda .tiendas-fisicas {
+    width: 120%;
   }
 }
 @media screen and (max-width: 603px) {
@@ -758,10 +797,6 @@ body {
   .main-compras .main-compras-conteiner2 { /* PAGE COMPRAS */
     grid-template-columns: repeat(1, 1fr);
   }
-  .tienda .iframe { /* TIENDA */
-    height: 400px;
-    width: 150%;
-  }
   .verano-tarjetas {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -789,9 +824,6 @@ body {
     width: 0px;
     height: 0px;
   }
-  .tienda iframe {
-    width: 100%;
-  }
   .page-verano .preparate .preparate-text h1 {
     padding-top: 50px;
     font-size: 60px;
@@ -799,6 +831,15 @@ body {
   .page-verano .preparate .preparate-text h2 {
     padding-top: 70px;
     font-size: 20px;
+  }
+  .tienda p {
+    font-size: 0px;
+  }
+  .tienda .tiendas-fisicas {
+    width: 150%;
+  }
+  .tienda .tiendas-fisicas .map-content .map-text h3 {
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 399px) {

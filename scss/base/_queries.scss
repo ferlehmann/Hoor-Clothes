@@ -16,9 +16,6 @@
                 }
             }
         }
-        .tienda iframe{
-        width: 100%;
-        }
         .formulario{
             .div-formulario{ /* PAGE SUSCRIBITE */
                 width: 600px;
@@ -26,6 +23,17 @@
         }
         .verano-tarjetas{
             grid-template-columns: repeat(4,1fr);
+        }
+        .tienda{
+            .tiendas-fisicas{
+                .map-content{
+                    display: block;
+                    .iframe{
+                        width: 100%;
+                    }
+
+                }
+            }
         }
     }    
 @media screen and (max-width:1366px){
@@ -80,7 +88,6 @@
     .verano-tarjetas{
         grid-template-columns: repeat(3,1fr);
     }
-
 }
 
 @media screen and (max-width:1100px){
@@ -121,13 +128,6 @@
         font-size: 70px;
         }
     }
-    .tienda{
-        .iframe{ /* TIENDA */
-            height: 75%;
-            width: 75%;
-        }
-    }
-    
 }
 
 @media screen and (max-width:870px){
@@ -187,13 +187,6 @@
                 }
             }
         }
-    .tienda{
-        .iframe{ /* TIENDA */
-            height: 400px;
-            width: 100%;
-        }
-    }
-
     #footer{
         .footer-content{
             .footer-form{
@@ -236,6 +229,11 @@
             margin-bottom: 100px;
         }
     }
+    .tienda{
+        .tiendas-fisicas{
+            width: 120%;
+        }
+    }
     
 }
 
@@ -269,7 +267,8 @@
     .categorias{ /* PAGE INDEX */
         height: 2200px;
     }
-}   
+}
+
 
     @media screen and (max-width:523px){
 
@@ -303,12 +302,6 @@
             grid-template-columns: repeat(1,1fr);
         }
     }
-    .tienda{
-        .iframe{ /* TIENDA */
-            height: 400px;
-            width: 150%;
-        }
-    }
     .verano-tarjetas{
         grid-template-columns: repeat(1,1fr);
         .card{
@@ -324,7 +317,6 @@
                 }
             } 
         }
-    
 }
 
 @media screen and (max-width:477px){ 
@@ -341,9 +333,6 @@
             height: 0px;
         }
     }
-    .tienda iframe{
-        width: 100%;
-    }
     .page-verano{
         .preparate{
                 .preparate-text{
@@ -357,6 +346,21 @@
                     }
                 }
             }       
+        }
+        .tienda{
+            p{
+                font-size: 0px;
+            }
+            .tiendas-fisicas{
+                width: 150%;
+                .map-content{
+                    .map-text{
+                        h3{
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
         }
 }
 @media screen and (max-width:399px){
@@ -381,3 +385,4 @@
         height: 2050px;
     }
 }
+
