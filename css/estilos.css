@@ -349,6 +349,9 @@ body {
 }
 .page-verano .preparate .preparate-text {
   background-image: url(../img/costa.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 600px;
 }
 .page-verano .preparate .preparate-text h1 {
