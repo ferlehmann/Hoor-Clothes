@@ -1,0 +1,838 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+body{
+    background-color: #FFFFFF;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+/* HEADER BOOTSTRAP */
+.bg-body-tertiary {
+    background-color: rgba(240, 128, 128, 0.918) !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar-brand img{
+    width: 70px;
+    height: 70px;
+}
+
+.nav-item a{
+    color: white;
+    font-size: 20px;
+}
+
+.dropdown-menu a{
+    padding: 10px;
+    margin-right: 30px;
+}
+
+.dropdown-menu a :hover{
+    background-color: rgba(240, 128, 128, 0.336);
+}
+
+.dropdown-menu{
+    background-color: lightcoral;
+    margin-right: 40px;
+    border: none;
+}
+
+.btn{
+    background-color: rgba(255, 255, 255, 0.281);
+    color: rgb(0, 0, 0);
+}
+
+.form-control{
+    background-color: rgba(255, 255, 255, 0.384);
+    border: none;
+}
+
+/* MAIN - HERO DEL INDEX*/
+.hero{ /* fondo moda */
+    background-image: url(../img/main-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.hero a{ /* enlace compra ahora */
+    bottom: 150px;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgba(240, 128, 128, 0.466);
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+.hero a:hover{
+    background-color: rgba(255, 255, 255, 0.603);
+    color: lightcoral;
+}
+/* MAIN - VERANO DEL INDEX */
+
+.verano{
+    width: auto;
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    margin-bottom: 70px;
+}
+
+.verano img{
+    padding: 30px;
+    width: 1500px;
+    height: 700px;
+}
+
+.verano-conteiner{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.verano h1{
+    color: lightslategray;
+    font-weight: 500;  
+    font-size: 45px; 
+    margin-bottom: 10px;
+}
+
+.verano h2{
+    font-size: 30px; 
+    color: lightslategray;
+    font-weight:lighter;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+.verano a{
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgba(240, 128, 128, 0.788);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.verano a:hover{
+    background-color: lightslategray;
+    color: lightcoral;
+}
+
+
+/* MAIN - CATEGORIAS DEL INDEX */
+
+.categorias{
+    background-color: rgba(240, 128, 128, 0.199);
+    height: 900px;
+}
+
+.categorias h2{
+    text-transform: uppercase;
+    font-size: 80px;
+    font-style: bold;
+    color: lightcoral;
+    padding-top: 50px;
+}
+
+.categorias p{
+    font-size: 30px;
+    font-style: italic;
+    margin: 20px;
+    color: lightslategray;
+}
+
+.categorias h2,p{
+    text-align: center;
+}
+
+.contenedor-tarjetas{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tarjetas-1{
+    margin: 20px;
+    background-image: url(../img/hombre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.tarjetas-2{
+    margin: 20px;
+    background-image: url(../img/mujer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.tarjetas-3{
+    margin: 20px;
+    background-image: url(../img/jeans.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.tarjetas-4{
+    margin: 20px;
+    background-image: url(../img/accesorios.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.contenido-tarjetas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: .5s;
+
+}
+
+.contenido-tarjetas h3{
+    color: lightcoral;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.contenido-tarjetas a{
+    width: 100px;
+    height: 100px;
+}
+
+.tarjetas-1:hover .contenido-tarjetas{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+.tarjetas-2:hover .contenido-tarjetas{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+.tarjetas-3:hover .contenido-tarjetas{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+.tarjetas-4:hover .contenido-tarjetas{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+/* FOOTER DE TODOS LOS HTML */
+
+#footer {
+    background: linear-gradient(to right, lightslategray, lightcoral);
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+
+.footer-form input[type="text"],
+.footer-form input[type="email"],
+.footer-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    background-color: rgba(231, 231, 231, 0.411);
+}
+
+.footer-form ::placeholder{
+    color: white;
+}
+
+.footer-form button {
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-form button:hover {
+    background-color: #777;
+}
+
+.footer p {
+    margin-top: 15px;
+}
+
+.registro{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+span a{
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+span a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.redes{
+    padding: 20px;
+}
+
+.redes ul{
+    list-style-type:none;
+}
+
+.redes ul li{
+    text-align: center;
+}
+
+.redes ul li a{
+    padding:20px;
+}
+
+.copyright{
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* PAGE COMPRAS */
+.main-compras{
+    text-align: center;
+    padding: 40px;
+    background: url(../img/pajaro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main-compras h1{
+    font-size: 120px;
+    color: lightslategray;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-compras h2{
+    font-size: 30px;
+    color: lightslategray;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.main-compras-conteiner2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card button {
+    background-color: lightcoral;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.card button:hover{
+    background-color: lightslategray;
+}
+
+
+/* PAGE VERANO */
+
+.preparate{
+    padding-top: 100px;
+    background-image: url(../img/playa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    height: 600px;
+}
+
+.preparate h1{
+    font-size: 50px;
+    color: lightcoral;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.preparate h2{
+    text-align: right;
+    padding-right: 80px;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.548);
+}
+
+.verano-tarjetas{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 25px;
+    height: 600px;
+}
+
+.verano-tarjetas .card{
+    background-color: rgba(226, 159, 13, 0.26);
+}
+
+.verano-tarjetas div{
+    padding: 60px;
+}
+
+.verano-tarjetas .card p{
+    padding-bottom: 20px;
+    color: lightcoral;
+}
+
+/* PAGE TIENDAS */
+
+.tienda{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(240, 128, 128, 0.062);
+}
+
+.tienda h1{
+    font-size: 50px;
+    color: lightcoral;
+    font-style: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tienda h2{
+    font-size: 30px;
+    color: rgb(82, 56, 56);
+    font-style: bold;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.tienda p{
+    font-style: italic;
+    padding-bottom: 5px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.tienda iframe{
+    padding: 20px;
+    margin-top: 50px;
+    width: 75%;
+    height: 500px;
+}
+
+
+/* PAGE SUSCRIBITE */
+
+.formulario{
+    background-image: url(../img/ubicacion.png);
+    background-position: center;
+    background-repeat: none;
+    background-size: 1900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.div-formulario {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.div-formulario h1 {
+    margin-bottom: 20px;
+    color: lightcoral;
+}
+
+.div-formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-formulario label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: lightslategray;
+}
+
+.div-formulario input, select {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: lightslategray;
+}
+
+.div-formulario input[type="submit"] {
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1500px){
+
+    .verano img{ /* PAGE INDEX */
+        width: 1000px;
+        height: 500px;
+    }
+    .verano{ /* PAGE INDEX */
+        align-items: center;
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width:1366px){
+
+.main-compras-conteiner2{ /* PAGE COMPRAS */
+    grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (max-width:1250px){ /* INDEX */
+
+    .verano{ /* PAGE INDEX */
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    .categorias{ /* PAGE INDEX */
+        height:1300px;
+    }
+    .categorias-conteiner div{ /* PAGE INDEX */
+        padding: 20px;
+    }
+    .categorias h2{ /* PAGE INDEX */
+        font-size: 50px;
+    }
+
+    .categorias p{ /* PAGE INDEX */
+        font-size: 30px;
+        margin: 10px;
+    }
+    .hero{ /* PAGE INDEX */
+        height: 700px;
+        margin-bottom: 70px;
+    }
+    
+    .hero a{ /* PAGE INDEX */
+        margin-bottom: 100px;
+    }
+    
+}
+
+@media screen and (max-width:1100px){
+
+.main-compras-conteiner2{ /* PAGE COMPRAS */
+    grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:1027px){
+
+    .footer-conteiner{ /* FOOTER */
+        flex-direction: column;
+    }   
+
+    .categorias h2{ /* PAGE INDEX */
+        font-size: 40px;
+    }
+    
+    .categorias p{ /* PAGE INDEX */
+        font-size: 20px;
+    }
+}   
+        
+@media screen and (max-width:1000px){
+
+    .verano img{ /* PAGE INDEX */
+        width: 800px;
+        height: 500px;
+    }   
+    .main-compras h1{ /* PAGE INDEX */
+        font-size: 70px;
+    }
+
+    .tienda iframe{ /* TIENDA */
+        height: 250px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    .verano img{ /* PAGE INDEX */
+        width: 600px;
+        height: 400px;
+    }
+    .categorias h2{ /* PAGE INDEX */
+        font-size: 40px;
+    } 
+    .categorias p{ /* PAGE INDEX */
+        font-size: 20px;
+    }
+
+    .main-compras{ /*PAGE COMPRAS */
+        text-align: center;
+        padding: 40px;
+        background-color: rgba(243, 250, 179, 0.384);
+    }
+
+    .main-compras h1{ /*PAGE COMPRAS */
+        font-size: 40px;
+    }
+
+    .main-compras-conteiner h2{ /*PAGE COMPRAS */
+        font-size: 20px;
+    }
+
+    .card { /*PAGE COMPRAS */
+        width: 200px;
+    }
+
+    .card h3 { /*PAGE COMPRAS */
+        font-size: 15px;
+    }
+
+    .card button { /*PAGE COMPRAS */
+        font-size: 10px;
+    }
+
+    .main-compras h1{ /*PAGE COMPRAS */
+        font-size: 60px;
+    }
+
+    .main-compras h2{ /*PAGE COMPRAS */
+        font-size: 20px;
+    }
+
+    .tienda iframe{ /* TIENDA */
+        height: 400px;
+        width: 100%;
+    }
+}
+
+    @media screen and (max-width:680px){
+    
+    .categorias{ /* PAGE INDEX */
+        height: 2400px;
+    }
+    .hero{  /* PAGE INDEX */
+        height: 500px;
+        margin-bottom: 70px;
+    }
+    
+    .hero{ /* PAGE INDEX */
+        background-image: url(../img/main-banner-2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .hero a{ /* PAGE INDEX */
+        margin-bottom: 100px;
+    }
+}
+
+    @media screen and (max-width:603px){
+    
+    .verano{ /* PAGE INDEX */
+        height: 500px;
+    } 
+    
+    .verano img{ /* PAGE INDEX */
+        width: 520px;
+        height: 370px;
+    }
+
+    .verano h1{ /* PAGE INDEX */
+        font-size: 30px; 
+    }
+    
+    .verano h2{ /* PAGE INDEX */
+        font-size: 20px; 
+    }
+    
+    .verano a{ /* PAGE INDEX */
+        font-size: 15px;
+    }
+
+    .contenedor-tarjetas{ /* PAGE INDEX */
+        flex-direction: column;
+    }
+    .tarjetas-2,.tarjetas-1,.tarjetas-3,.tarjetas-4{ /* PAGE INDEX */
+        width: 250px;
+        height: 400px;
+    }
+    
+    .categorias{ /* PAGE INDEX */
+        height: 2000px;
+    }
+}
+
+    @media screen and (max-width:523px){
+
+    .categorias h2{ /* PAGE INDEX */
+        font-size: 30px; 
+    }
+    .categorias p{ /* PAGE INDEX */
+        font-size: 15px;
+    }
+    
+    .footer-form { /* FOOTER */
+        width: 400px;
+    }
+
+    .registro{ /* FOOTER */
+        font-size: 15px;
+    }
+    
+    span a{ /* FOOTER */
+        font-size: 15px;
+    }
+
+    .verano img{ /* PAGE INDEX */
+        width: 475px;
+        height: 325px;
+    }
+
+    .main-compras-conteiner2{ /* PAGE COMPRAS */
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .main-compras h2{ /* PAGE COMPRAS */
+        font-size: 20px;
+    }
+
+    .tienda iframe{ /* TIENDA */
+        height: 400px;
+        width: 150%;
+    }
+} 
+
+@media screen and (max-width:477px){ 
+
+    .verano img{ /* PAGE INDEX */
+    width: 0px;
+    height: 0px;
+    }
+
+    .verano{  /* PAGE INDEX */
+    height: 250px;
+    }
+
+    .footer-form{  /* FOOTER */
+        width: 300px;
+    }
+
+    .div-formulario{ /* PAGE SUSCRIBITE */
+        width: 300px;
+    }
+
+    .tienda iframe{ /* TIENDA */
+        height: 400px;
+        width: 165%;
+    }
+}
+
+@media screen and (max-width:380px){
+
+    .categorias{ /* PAGE INDEX */
+        height: 2050px;
+    }
+}
