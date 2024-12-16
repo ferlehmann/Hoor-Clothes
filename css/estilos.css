@@ -529,6 +529,10 @@ body {
   margin-top: 10px;
   background-color: rgba(231, 231, 231, 0.411);
 }
+#footer .footer-content .footer-form input::placeholder,
+#footer .footer-content .footer-form textarea::placeholder {
+  color: #fffafa; /* Color gris suave */
+}
 #footer .footer-content .footer-form button {
   padding: 10px;
   border-radius: 5px;
