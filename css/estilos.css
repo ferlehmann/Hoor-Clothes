@@ -191,7 +191,7 @@ body {
   color: light;
 }
 .verano-tarjetas .card .precio {
-  color: rgb(156, 154, 154);
+  color: rgb(29, 29, 29);
   font-weight: 800;
   font-size: 20px;
   text-shadow: 0px 0px 10px rgba(255, 247, 247, 0.637);
@@ -698,19 +698,19 @@ body {
     background-color: rgba(243, 250, 179, 0.384);
   }
   .main-compras h1 { /*PAGE COMPRAS */
-    font-size: 40px;
+    font-size: 65px;
   }
   .main-compras h2 { /*PAGE COMPRAS */
-    font-size: 20px;
+    font-size: 25px;
   }
   .main-compras .main-compras-conteiner2 .card { /*PAGE COMPRAS */
-    width: 200px;
+    width: 250px;
   }
   .main-compras .main-compras-conteiner2 .card h3 {
-    font-size: 15px;
+    font-size: 25px;
   }
   .main-compras .main-compras-conteiner2 .card button { /*PAGE COMPRAS */
-    font-size: 10px;
+    font-size: 15px;
   }
   #footer .footer-content .footer-form {
     width: 300px;
@@ -744,6 +744,12 @@ body {
   }
   .tienda .tiendas-fisicas {
     width: 120%;
+  }
+  .main-compras h2 { /* PAGE COMPRAS */
+    font-size: 20px;
+  }
+  .main-compras .main-compras-conteiner2 { /* PAGE COMPRAS */
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 603px) {
@@ -793,12 +799,6 @@ body {
   .verano img { /* PAGE INDEX */
     width: 475px;
     height: 325px;
-  }
-  .main-compras h2 { /* PAGE COMPRAS */
-    font-size: 20px;
-  }
-  .main-compras .main-compras-conteiner2 { /* PAGE COMPRAS */
-    grid-template-columns: repeat(1, 1fr);
   }
   .verano-tarjetas {
     grid-template-columns: repeat(1, 1fr);
